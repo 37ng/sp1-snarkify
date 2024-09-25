@@ -11,9 +11,7 @@ COPY . .
 # Install SP1 Rust Toolchain
 SHELL ["/bin/bash", "-c"]
 RUN curl -L https://sp1.succinct.xyz | bash
-RUN ls
 RUN ["/root/.sp1/bin/sp1up"]
-
 
 # Build only the snarkify binary
 WORKDIR /workspace/script

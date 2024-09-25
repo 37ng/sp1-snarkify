@@ -37,7 +37,7 @@ impl ProofHandler for MyProofHandler {
 
         // Setup the inputs.
         let mut stdin = SP1Stdin::new();
-        stdin.write(&data.public_input); // hardcoded input
+        stdin.write(&data.public_input);
 
         // Generate the proof
         let proof = client
